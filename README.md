@@ -14,7 +14,7 @@ binarySeries.add(true);
 binarySeries.add(false);
 binarySeries.add(true);
 
-// Count results
+// Count values
 biarySeries.count(true);   // 2
 binarySeries.count(false); // 1
 
