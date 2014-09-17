@@ -7,7 +7,7 @@ A stack-like javascript bit series buffer
 
 ```javascript
 // Make room for 60 bits
-var binarySeries = window.BooleanSeries(60); 
+var binarySeries = BooleanSeries(60); 
 
 // Add values
 binarySeries.add(true);
