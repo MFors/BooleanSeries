@@ -32,5 +32,7 @@ newBinarySeries.at(1); // false
 ```
 
 ## Performance
-Constant insertion, O(logn) count, constant lookup.
-Linear in memory: O(n/16), overhead ratio of 1 due to floating point basis.
+* O(n) insertion with n capacity, O(1) in use
+* O(n) count with n capacity and O(logn) with n value, amortized O(1) in use
+* O(1) lookup
+* Linear O(n/16) in memory with n capacity, overhead ratio of 1 due to floating point basis
