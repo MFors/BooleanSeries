@@ -7,11 +7,12 @@
       size = size.split(",").map(function(e){
         return +e;
       });
-      for (i = 0; i !== (size.length - 1); ++i) {
+      for (i = 0; i !== (size.length - 2); ++i) {
         this._bArr.push(size[i]);
-        this.size = size.length;
       }
+      this.size = size.length;
       this.bitCount = size[i];
+      this.c = size[i + 1];
     } else {
       this.bitCount = size;
       size = Math.ceil(size / 32.0);
@@ -53,7 +54,7 @@
     return (this._bArr[i] & (1 << j)) >>> (j);
   }
   BooleanSeries.prototype.toString = function() {
-    return this._bArr.join(",") + "," + this.bitCount;
+    return this._bArr.join(",") + "," + this.bitCount + "," + this.c;
   }
   w.BooleanSeries = function(s) { return new BooleanSeries(s); };
 })(window);
