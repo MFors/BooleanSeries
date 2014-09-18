@@ -26,7 +26,11 @@ binarySeries.at(0); // true
 binarySeries.at(1); // false
 
 // Construct from int-tuple string
-var newBinarySeries = BooleanSeries("50,0,60,3");
+var newBinarySeries = BooleanSeries("5,0,60,3");
 newBinarySeries.at(0); // true
 newBinarySeries.at(1); // false
 ```
+
+## Performance
+Constant insertion, O(logn) count, constant lookup.
+Linear in memory: O(n/16), overhead ratio of 1 due to floating point basis.
