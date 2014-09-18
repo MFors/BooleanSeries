@@ -19,7 +19,7 @@ biarySeries.count(true);   // 2
 binarySeries.count(false); // 1
 
 // Print as int-tuple (str)
-binarySeries.ToString(); // 5,0
+binarySeries.toString(); // 5,0,60
 
 // Check explicit values
 binarySeries.at(0); // true
